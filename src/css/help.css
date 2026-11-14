@@ -1,182 +1,149 @@
 .help-page {
-  width: 100%;
-  height: auto;
-  display: flex;
-  background: #f8f8ff;
+  min-width: 0;
+  padding-block: clamp(1.5rem, 5vw, 4.5rem) var(--section-space);
 }
 
-.help-page .help-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  flex-direction: row;
+#root .help-page .help-container {
+  max-width: 68rem;
 }
 
 .help-page .help-menu {
   width: 100%;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-bottom: 1px solid #f8f8ff;
+  margin-bottom: clamp(1rem, 3vw, 2.1rem);
+  padding: 0.4rem;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
-.help-page .help-menu .table-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.help-page .css-1gsv261 {
-  width: 75%;
-}
-
-.help-page .css-heg063-MuiTabs-flexContainer {
-  justify-content: space-between;
-}
-
-.help-page .css-19kzrtu {
-  padding-top: 24px;
-}
+.help-page .help-menu > div { border: 0; }
+.help-page .help-menu :is(.table-list, .css-1gsv261) { width: 100%; }
+.help-page .css-heg063-MuiTabs-flexContainer { align-items: stretch; }
+.help-page .css-19kzrtu { padding-inline: 0; }
 
 .help-page .help-main-content {
   width: 100%;
-  height: 1000px;
+  min-width: 0;
+}
+
+.help-page :is(.rules-box, .admin-letter-box) {
+  width: 100%;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  background: var(--parchment);
+  box-shadow: inset 0 0 0 4px var(--surface), inset 0 0 0 5px var(--line), var(--shadow);
 }
 
 .help-page .rules-box {
-  padding: 24px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #f8f8ff;
-  border: 1px solid #ededed;
-  box-shadow: 0px 20px 30px rgba(25, 25, 46, 0.04);
-  border-radius: 8px;
+  padding: clamp(1rem, 4.5vw, 3.8rem);
 }
 
 .rules-box .rules-frame {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  max-width: 72ch;
+  align-self: center;
+  color: var(--muted);
 }
 
 .rules-box .rules-frame p {
-  border-bottom: 1px solid #dddddd;
-  color: #000000;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.00938em;
+  margin: 0;
+  padding-block: 0.85rem;
+  font-size: clamp(0.92rem, 1.5vw, 1.02rem);
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.rules-box .rules-frame p + p {
+  border-top: 1px solid var(--line);
+}
+
+.rules-box .rules-frame p:first-child {
+  padding-top: 0;
+  color: var(--wine);
+  font: 400 clamp(1.7rem, 3.2vw, 2.5rem) / 1.2 var(--font-display);
 }
 
 .help-page .accordion-menu {
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  gap: 0.75rem;
 }
 
+#root .help-page .accordion-menu .MuiAccordion-root {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--wine);
+  box-shadow: var(--shadow);
+}
+
+#root .help-page .accordion-menu .MuiAccordion-root::before { display: none; }
+
+#root .help-page .MuiAccordionSummary-root {
+  min-height: 58px;
+  padding-inline: clamp(0.9rem, 2.4vw, 1.6rem);
+  gap: 0.75rem;
+}
+
+#root .help-page .MuiAccordionSummary-root.Mui-focusVisible {
+  outline-offset: -3px;
+  background: var(--linen);
+}
+
+.help-page .MuiAccordionSummary-root .MuiTypography-root { font-weight: 700; }
+.help-page .MuiAccordionSummary-expandIconWrapper { color: var(--accent); }
+
+#root .help-page .MuiAccordionDetails-root {
+  padding: 0.35rem clamp(0.9rem, 2.4vw, 1.6rem) 1.25rem;
+  color: var(--muted);
+}
+
+.help-page .MuiAccordionDetails-root .MuiTypography-root { line-height: 1.7; }
+
 .help-page .admin-letter-box {
-  padding: 60px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #f8f8ff;
-  border: 1px solid #ededed;
-  box-shadow: 0px 20px 30px rgba(25, 25, 46, 0.04);
-  border-radius: 8px;
+  padding: clamp(1rem, 5vw, 4rem);
 }
 
 .help-page .admin-letter-box .admin-letter-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  width: min(100%, 43rem);
+  align-self: center;
+  gap: clamp(1rem, 3vw, 2rem);
 }
 
 .help-page .admin-letter-container .admin-letter-frame {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 0.75rem;
 }
 
 .help-page .admin-letter-frame span {
-  font-family: "ABeeZee";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  color: #140342;
+  color: var(--wine);
+  font: 400 clamp(2.1rem, 4vw, 3.65rem) / 1 var(--font-display);
+  letter-spacing: -0.045em;
 }
 
 .help-page .admin-letter-frame p {
-  margin-top: 20px;
-  font-family: "Sedan";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 26px;
-  color: #4f547b;
-}
-
-.help-page .admin-letter-container .admin-letter-frame {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .help-page .admin-letter-frame .admin-input-box {
-  margin-top: 30px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.3rem;
 }
 
 .help-page .admin-letter-frame .admin-input-box label {
-  font-family: "Verdana";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  color: #140342;
+  color: var(--wine);
+  font-size: 0.9rem;
+  font-weight: 750;
 }
 
-.help-page .admin-letter-frame .admin-input-box input {
-  margin-top: 10px;
-  padding: 20px;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  background: #f8f8ff;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  font-family: "Verdana";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 26px;
-  color: #4f547b;
-}
+.help-page .admin-letter-frame .admin-input-box :is(input, textarea) { width: 100%; }
 
 .help-page .admin-letter-frame .admin-input-box textarea {
-  margin-top: 10px;
-  padding: 20px;
-  width: 100%;
-  height: 150px;
-  display: flex;
-  background: #f8f8ff;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  font-family: "Verdana";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 26px;
-  color: #4f547b;
+  min-height: 9rem;
+  resize: vertical;
 }

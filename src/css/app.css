@@ -1,39 +1,206 @@
-.App {
+/* Shared elements use MUI's stable classes inside the app and the cart portal. */
+#root .MuiContainer-root {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  padding-inline: var(--gutter);
+}
+
+#root > :is(.homepage, .products-page, .help-page, .order-page, .user-page) {
+  flex: 1;
+}
+
+#root > :is(.help-page, .order-page, .user-page, .products-page) {
+  background: var(--parchment);
+}
+
+:is(#root, #account-menu) :is(button, input, textarea, .MuiTypography-root) {
+  font-family: var(--font-body);
+}
+
+:is(#root, #account-menu) :is(a, button, input, textarea, [role="button"], [tabindex]):focus-visible,
+:is(#root, #account-menu) .Mui-focusVisible {
+  outline: 2px solid var(--focus-color, var(--accent));
+  outline-offset: 3px;
+}
+
+:is(#root, #account-menu) .MuiButton-contained {
+  --button-bg: var(--wine);
+  --button-hover: var(--wine-hover);
+  --button-text: var(--light-text);
+  min-height: 44px;
+  padding: 0.63rem 1.25rem;
+  border: 1px solid var(--button-border, transparent);
+  border-radius: var(--radius-sm);
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  box-shadow: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  transition: background-color var(--motion), color var(--motion), border-color var(--motion), transform var(--motion);
+}
+
+:is(#root, #account-menu) .MuiButton-containedSecondary {
+  --button-bg: var(--linen);
+  --button-hover: #ecdbbd;
+  --button-text: var(--wine);
+  --button-border: var(--line);
+}
+
+@media (hover: hover) {
+  :is(#root, #account-menu) .MuiButton-contained:hover {
+    background-color: var(--button-hover);
+    box-shadow: none;
+  }
+}
+
+:is(#root, #account-menu) .MuiButton-contained:active {
+  transform: translateY(1px);
+}
+
+:is(#root, #account-menu) .MuiButton-contained.Mui-disabled {
+  opacity: 0.6;
+}
+
+#root :is(.spec-input, .spec-textarea, .card-input, .card-half-input, .admin-input-box input, .admin-input-box textarea) {
+  min-width: 0;
+  min-height: 48px;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color var(--motion), box-shadow var(--motion);
+}
+
+#root :is(input, textarea)::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+#root :is(input, textarea):not([type="file"]):focus {
+  border-color: var(--accent);
+}
+
+#root :is(.category-title, .chosen-product > .title, .address .title, .menu-name) {
+  color: var(--wine);
+  font-family: var(--font-display);
+  font-size: var(--heading-size);
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+#root :where(.category-title, .chosen-product > .title, .address .title, .menu-name)::after {
+  content: "";
+  display: block;
+  width: min(100%, 10rem);
+  height: 7px;
+  margin: 0.65rem auto 0;
+  background:
+    conic-gradient(from 45deg, var(--gold-line) 0 25%, transparent 25% 50%, var(--gold-line) 50% 75%, transparent 75%) center / 7px 7px no-repeat,
+    var(--gold-rule) center / 100% 1px no-repeat;
+}
+
+#root :is(.help-page, .order-page) .table_list .MuiTabs-flexContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.2rem, 1vw, 0.65rem);
+}
+
+#root :is(.help-page, .order-page) .table_list .MuiTab-root {
+  min-width: 0;
+  min-height: 48px;
+  max-width: none;
+  padding: 0.6rem 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  background: var(--paper);
+  font-size: clamp(0.68rem, 1.7vw, 0.82rem);
+  font-weight: 750;
+  line-height: 1.25;
+  transition: background-color var(--motion), color var(--motion);
+}
+
+#root :is(.help-page, .order-page) .table_list .MuiTab-root:hover {
+  color: var(--wine);
+  background: var(--linen);
+}
+
+#root :is(.help-page, .order-page) .table_list .MuiTab-root.Mui-selected {
+  border-color: var(--wine);
+  color: var(--light-text);
+  background: var(--wine);
+}
+
+#root :is(.help-page, .order-page) .table_list .MuiTabs-indicator {
+  display: none;
+}
+
+#root :is(.help-page, .order-page) .MuiTabPanel-root {
+  padding: 0;
+}
+
+#root .no-data {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: 9rem;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  border: 1px dashed var(--field-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root :is(.homepage, .products-page) .product-sale {
+  position: absolute;
+  z-index: 1;
+  inset: 0.7rem auto auto 0.7rem;
+  padding: 0.33rem 0.6rem;
+  border-radius: var(--pill);
+  background: var(--paper);
+  color: var(--wine);
+  font: 700 0.69rem / 1.25 var(--font-body);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
+/* Existing template selectors remain available. */
+.App { text-align: center; }
+.App-logo { height: 40vmin; pointer-events: none; }
 .App-header {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  background: var(--wine);
+  color: var(--light-text);
+  font-size: var(--heading-size);
 }
+.App-link { color: var(--gold); }
 
-.App-link {
-  color: rgb(112, 76, 182);
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo { animation: App-logo-float 3s ease-in-out infinite; }
 }
 
 @keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
+  50% { transform: translateY(8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(#root, #account-menu) *,
+  :is(#root, #account-menu) *::before,
+  :is(#root, #account-menu) *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
