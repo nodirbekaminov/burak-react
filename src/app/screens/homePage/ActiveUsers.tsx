@@ -34,7 +34,7 @@ export default function ActiveUsers() {
                     >
                       <CardOverflow>
                         <AspectRatio ratio="1">
-                          <img src={member.memberImage} alt="" />
+                          <img src={imagePath} alt="" />
                         </AspectRatio>
                       </CardOverflow>
                       <CardOverflow>
