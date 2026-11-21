@@ -133,16 +133,18 @@
 }
 
 .homepage .popular-dishes-frame .MuiCardContent-root {
+  flex: none;
   padding: 0.75rem var(--Card-padding) 0.5rem;
 }
 
 .homepage .popular-dishes-frame .MuiCardContent-root > .MuiStack-root {
   width: 100%;
-  align-items: baseline;
+  align-items: center;
   gap: 0.25rem;
 }
 
 .homepage .popular-dishes-frame .MuiCardContent-root h2 {
+  min-width: 0;
   margin: 0;
   color: var(--wine-dark);
   font: 600 clamp(1.18rem, 2.4vw, 1.85rem) / 1.12 var(--font-display);
@@ -151,6 +153,7 @@
 .homepage .popular-dishes-frame .MuiCardContent-root h2 + * {
   color: var(--muted);
   font-family: var(--font-body);
+  flex-shrink: 0;
   font-size: 0.78rem;
 }
 
@@ -159,8 +162,11 @@
 }
 
 .homepage .popular-dishes-frame .MuiCardOverflow-root {
+  flex: 1;
+  align-items: flex-start;
   width: auto;
   height: auto;
+  min-width: 0;
   min-width: 0;
   margin: 0;
   padding: 0.55rem var(--Card-padding) 0.65rem;
@@ -175,6 +181,7 @@
   gap: 0.25rem;
   color: var(--muted);
   font: 500 clamp(0.66rem, 1.3vw, 0.83rem) / 1.25 var(--font-body);
+  overflow-wrap: anywhere;
   white-space: normal;
 }
 
@@ -185,6 +192,10 @@
 .homepage .new-products-frame {
   background: var(--parchment);
   border-block: 1px solid var(--gold-border);
+}
+
+.homepage .new-products-frame .cards-frame {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
 }
 
 .homepage .new-products-frame .main .card {
@@ -215,7 +226,9 @@
 
 .homepage .new-products-frame .product-detail .title {
   color: var(--wine);
-  font: 400 clamp(1.12rem, 2.2vw, 1.65rem) / 1.15 var(--font-display);
+  margin-right: 0.4rem;
+  white-space: nowrap;
+  font: 400 clamp(1.06rem, 1.6vw, 1.38rem) / 1.15 var(--font-display);
 }
 
 .homepage .new-products-frame .product-detail .price {

@@ -40,7 +40,7 @@ export default function PopularDishes() {
                         <img src={imagePath} alt="" />
                       </CardCover>
                       <CardCover className={'card-cover'} />
-                      <CardContent sx={{ justifyContent: 'flex-end' }}>
+                      <CardContent>
                         <Stack
                           flexDirection={'row'}
                           justifyContent={'space-between'}
@@ -90,13 +90,6 @@ export default function PopularDishes() {
                         <Typography
                           startDecorator={<DescriptionOutlinedIcon />}
                           textColor="neutral.300"
-                          sx={{
-                            display: 'block',
-                            overflow: 'hidden',
-                            textOverflow: 'ellipsis',
-                            whiteSpace: 'nowrap',
-                          }}
-                          noWrap
                         >
                           {product.productDesc}
                         </Typography>
