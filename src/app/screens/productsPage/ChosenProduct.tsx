@@ -11,7 +11,6 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { createSelector, Dispatch } from '@reduxjs/toolkit';
 import { setChosenProduct, setRestauarnt } from './slice';
