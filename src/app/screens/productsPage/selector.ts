@@ -1,6 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { AppRootState } from '../../../lib/types/screen';
-import ProductsPage from '.';
 
 const selectProductsage = (state: AppRootState) => state.productsPage;
 
