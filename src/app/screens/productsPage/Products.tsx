@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from 'react';
+import React, { ChangeEvent, useEffect, useState } from 'react';
 import { Box, Button, Container, Stack } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
@@ -252,7 +252,6 @@ export default function Products(props: ProductsProps) {
                         <Button
                           className={'shop-btn'}
                           onClick={(e) => {
-                            console.log('BUTTON PRESSED!');
                             onAdd({
                               _id: product._id,
                               quantity: 1,
