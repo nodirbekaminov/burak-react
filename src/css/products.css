@@ -224,7 +224,7 @@
   border-radius: 50%;
   background: rgb(48 22 20 / 92%);
   color: var(--light-text);
-  transition: background-color var(--motion), transform var(--motion);
+  transition: background-color var(--motion), opacity var(--motion), transform var(--motion);
 }
 
 #root .products-page .products .shop-btn { right: 0.6rem; }
@@ -246,6 +246,18 @@
 }
 
 @media (hover: hover) {
+  #root .products-page .products .product-card :is(.shop-btn, .view-btn) {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(6px);
+  }
+
+  #root .products-page .products .product-card:is(:hover, :focus-within) :is(.shop-btn, .view-btn) {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
   .products-page .products .product-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
@@ -258,31 +270,36 @@
 }
 
 .products-page .products .product-card > .product-desc {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  --product-title-size: clamp(1.2rem, 2.4vw, 1.75rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
   gap: 0.35rem 0.55rem;
   padding: clamp(0.65rem, 1.7vw, 1rem);
   border-top: 1px solid var(--gold-border);
 }
 
 .products-page .products .product-desc .product-title {
+  min-width: 0;
+  min-height: 2.2em;
   color: var(--wine);
-  font: 400 clamp(1.2rem, 2.4vw, 1.75rem) / 1.1 var(--font-display);
+  font: 400 var(--product-title-size) / 1.1 var(--font-display);
   overflow-wrap: anywhere;
 }
 
-.products-page .products .product-desc .product-desc {
+.products-page .products .product-desc .product-price {
   display: flex;
   align-items: center;
+  justify-self: end;
+  min-height: calc(var(--product-title-size) * 1.1);
+  white-space: nowrap;
   gap: 0.2rem;
   color: var(--accent);
   font-size: 0.91rem;
   font-weight: 800;
 }
 
-.products-page .products .product-desc .product-desc svg {
+.products-page .products .product-desc .product-price svg {
   width: 1.05rem;
   height: 1.05rem;
 }

@@ -1,0 +1,387 @@
+{
+  "importedAt": "2026-11-25T00:34:51.743Z",
+  "inserted": [
+    {
+      "id": "6b062d21810784a56304c3bf",
+      "productName": "Adana Kebab",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c0",
+      "productName": "Uy Kotleti",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c1",
+      "productName": "Sabzavotli Kabob",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c2",
+      "productName": "Turkcha Palov",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c3",
+      "productName": "Tovuq Shashlik",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c4",
+      "productName": "Tovuq Qanotlari",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c5",
+      "productName": "Pechdagi Qo‘y Go‘shti",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c6",
+      "productName": "O‘rikli Ko‘fta",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c7",
+      "productName": "Yong‘oqli Tovuq",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c8",
+      "productName": "Turkcha Qo‘y Go‘shti",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3c9",
+      "productName": "Yasmiq Sho‘rva",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3ca",
+      "productName": "Manti",
+      "productCollection": "DISH"
+    },
+    {
+      "id": "6b062d21810784a56304c3cb",
+      "productName": "Papayya Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3cc",
+      "productName": "Shopska Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3cd",
+      "productName": "Anorli Salat",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3ce",
+      "productName": "Batat Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3cf",
+      "productName": "Losos va Avokado Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d0",
+      "productName": "Kartoshka Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d1",
+      "productName": "Krevetkali Salat",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d2",
+      "productName": "Yashil Salat",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d3",
+      "productName": "Kunjutli Bodring Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d4",
+      "productName": "Guruch Ugrali Salat",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d5",
+      "productName": "Bodring va Arpabodiyon Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d6",
+      "productName": "Tovuqli Salat",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d7",
+      "productName": "Baqlajon va Kuskus Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d8",
+      "productName": "O‘rtayer Dengizi Pasta Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3d9",
+      "productName": "Grekcha Tovuq Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3da",
+      "productName": "Sarsabil Salati",
+      "productCollection": "SALAD"
+    },
+    {
+      "id": "6b062d21810784a56304c3db",
+      "productName": "Paxlava",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3dc",
+      "productName": "Kunafa",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3dd",
+      "productName": "Asalli Cheesecake",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3de",
+      "productName": "Shokoladli Tort",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3df",
+      "productName": "Malinali Brauni",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e0",
+      "productName": "Pistali Tort",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e1",
+      "productName": "Sabzili Tort",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e2",
+      "productName": "Xurmoli Yong‘oq Keksi",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e3",
+      "productName": "Pankeyk",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e4",
+      "productName": "Kofeli Muzqaymoq",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e5",
+      "productName": "Qulupnayli Tart",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e6",
+      "productName": "Olmali Pirog",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e7",
+      "productName": "Karamelli Cheesecake",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e8",
+      "productName": "Churros",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3e9",
+      "productName": "Malinali Muss",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3ea",
+      "productName": "Bananli Pankeyk",
+      "productCollection": "DESSERT"
+    },
+    {
+      "id": "6b062d21810784a56304c3eb",
+      "productName": "Olma va Rezavor Smuzi",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3ec",
+      "productName": "Bananli Milkshake",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3ed",
+      "productName": "Qulupnay va Banan Shake",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3ee",
+      "productName": "Mango Lassi",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3ef",
+      "productName": "Laymli Limonad",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f0",
+      "productName": "Apelsinli Ichimlik",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f1",
+      "productName": "Qulupnayli Limonad",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f2",
+      "productName": "Muzli Kofe",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f3",
+      "productName": "Frappe",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f4",
+      "productName": "Masala Choy",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f5",
+      "productName": "Issiq Shokolad",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f6",
+      "productName": "Taycha Muzli Choy",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f7",
+      "productName": "Mango va Apelsin Smuzi",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f8",
+      "productName": "Ananas va Zanjabil Smuzi",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3f9",
+      "productName": "Yogurtli Ichimlik",
+      "productCollection": "DRINK"
+    },
+    {
+      "id": "6b062d21810784a56304c3fa",
+      "productName": "Doner Sendvich",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c3fb",
+      "productName": "Sabzavotli Ezma",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c3fc",
+      "productName": "Hummus",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c3fd",
+      "productName": "Baba Ganush",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c3fe",
+      "productName": "Cacik",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c3ff",
+      "productName": "Gril Non",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c400",
+      "productName": "Tandir Non",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c401",
+      "productName": "Kartoshkali Bolani",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c402",
+      "productName": "Pishloqli Borek",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c403",
+      "productName": "Pishloqli Tayoqchalar",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c404",
+      "productName": "Makkajo‘xori",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c405",
+      "productName": "Kumpir",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c406",
+      "productName": "Shaurma Noni",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c407",
+      "productName": "Dolma",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c408",
+      "productName": "Yuka Fri",
+      "productCollection": "OTHER"
+    },
+    {
+      "id": "6b062d21810784a56304c409",
+      "productName": "Falafel",
+      "productCollection": "OTHER"
+    }
+  ],
+  "counts": {
+    "DISH": 16,
+    "SALAD": 16,
+    "DESSERT": 16,
+    "DRINK": 16,
+    "OTHER": 16
+  }
+}

@@ -1,0 +1,1195 @@
+{
+  "targetPerCategory": 16,
+  "products": [
+    {
+      "key": "adana-kebab",
+      "productCollection": "DISH",
+      "productName": "Adana Kebab",
+      "productPrice": 16,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Ziravorli qiyma go‘shtdan tayyorlangan, ko‘mirda pishirilgan Adana kabobi.",
+      "image": {
+        "localFile": "public/img/kebab-fresh.webp",
+        "sourceName": "Existing Burak project image"
+      }
+    },
+    {
+      "key": "uy-kotleti",
+      "productCollection": "DISH",
+      "productName": "Uy Kotleti",
+      "productPrice": 12,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Qizartirib pishirilgan yumshoq go‘sht kotletlari, qaymoqli sous bilan.",
+      "image": {
+        "localFile": "public/img/cutlet.webp",
+        "sourceName": "Existing Burak project image"
+      }
+    },
+    {
+      "key": "sabzavotli-kabob",
+      "productCollection": "DISH",
+      "productName": "Sabzavotli Kabob",
+      "productPrice": 10,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Grilda pishirilgan qalampir, pomidor, qovoqcha va piyozdan kabob.",
+      "image": {
+        "localFile": "public/img/kebab.webp",
+        "sourceName": "Existing Burak project image"
+      }
+    },
+    {
+      "key": "turkcha-palov",
+      "productCollection": "DISH",
+      "productName": "Turkcha Palov",
+      "productPrice": 15,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Qo‘y go‘shti, guruch va xushbo‘y ziravorlar bilan tayyorlangan palov.",
+      "image": {
+        "localFile": "public/img/products/turkcha-palov.jpg",
+        "sourceName": "Turkish lamb pilau",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/cr2kyr1763793839.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53263"
+      }
+    },
+    {
+      "key": "tovuq-shashlik",
+      "productCollection": "DISH",
+      "productName": "Tovuq Shashlik",
+      "productPrice": 13,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Dudlangan paprika bilan marinadlangan, grilda pishirilgan tovuq shashligi.",
+      "image": {
+        "localFile": "public/img/products/tovuq-shashlik.jpg",
+        "sourceName": "Smoky chicken skewers",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/3um6il1763794322.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53264"
+      }
+    },
+    {
+      "key": "tovuq-qanotlari",
+      "productCollection": "DISH",
+      "productName": "Tovuq Qanotlari",
+      "productPrice": 12,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Limon, sarimsoq va zira bilan marinadlangan tovuq qanotlari.",
+      "image": {
+        "localFile": "public/img/products/tovuq-qanotlari.jpg",
+        "sourceName": "Chicken wings with cumin, lemon & garlic",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/4hzyvq1763792564.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53261"
+      }
+    },
+    {
+      "key": "pechdagi-qozi-goshti",
+      "productCollection": "DISH",
+      "productName": "Pechdagi Qo‘y Go‘shti",
+      "productPrice": 24,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Dolchin, arpabodiyon va sitrus bilan sekin pishirilgan yumshoq qo‘y go‘shti.",
+      "image": {
+        "localFile": "public/img/products/pechdagi-qozi-goshti.jpg",
+        "sourceName": "Slow-roast lamb with cinnamon, fennel & citrus",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/gr4lo51763791826.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53260"
+      }
+    },
+    {
+      "key": "orikli-kofta",
+      "productCollection": "DISH",
+      "productName": "O‘rikli Ko‘fta",
+      "productPrice": 17,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Qo‘y go‘shtidan tayyorlangan, quritilgan o‘rik qo‘shilgan mayin ko‘ftalar.",
+      "image": {
+        "localFile": "public/img/products/orikli-kofta.jpg",
+        "sourceName": "Lamb & apricot meatballs",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/72fgzj1764109947.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53277"
+      }
+    },
+    {
+      "key": "yongoqli-tovuq",
+      "productCollection": "DISH",
+      "productName": "Yong‘oqli Tovuq",
+      "productPrice": 16,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Qaymoqli yong‘oq sousida tortiladigan pechda pishirilgan tovuq.",
+      "image": {
+        "localFile": "public/img/products/yongoqli-tovuq.jpg",
+        "sourceName": "Roasted chicken with creamy walnut sauce",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/ro8mzj1763800655.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53268"
+      }
+    },
+    {
+      "key": "turkcha-qozi-goshti",
+      "productCollection": "DISH",
+      "productName": "Turkcha Qo‘y Go‘shti",
+      "productPrice": 22,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Sabzavotlar va sharqona ziravorlar bilan tayyorlangan qo‘y go‘shti.",
+      "image": {
+        "localFile": "public/img/products/turkcha-qozi-goshti.jpg",
+        "sourceName": "Turkish-style lamb",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/0p7l6b1763813981.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53270"
+      }
+    },
+    {
+      "key": "yasmiq-shorva",
+      "productCollection": "DISH",
+      "productName": "Yasmiq Sho‘rva",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Qizil yasmiq va sabzavotlardan tayyorlangan issiq turkcha sho‘rva.",
+      "image": {
+        "localFile": "public/img/products/yasmiq-shorva.jpg",
+        "sourceName": "Corba",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52977"
+      }
+    },
+    {
+      "key": "manti",
+      "productCollection": "DISH",
+      "productName": "Manti",
+      "productPrice": 14,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Yupqa xamir ichidagi go‘shtli manti, qatiqli sous va ko‘katlar bilan.",
+      "image": {
+        "localFile": "public/img/products/manti.jpg",
+        "sourceName": "Mantu Afghan Dumpling",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/oemdp11779556068.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53402"
+      }
+    },
+    {
+      "key": "papayya-salati",
+      "productCollection": "SALAD",
+      "productName": "Papayya Salati",
+      "productPrice": 9,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Yashil papayya, sabzavotlar va nordon-shirin sousli yengil salat.",
+      "image": {
+        "localFile": "public/img/products/papayya-salati.jpg",
+        "sourceName": "Papaya salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/7ytdtz1784833420.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53573"
+      }
+    },
+    {
+      "key": "shopska-salati",
+      "productCollection": "SALAD",
+      "productName": "Shopska Salati",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Pomidor, bodring, qalampir va oq pishloqdan tayyorlangan yangi salat.",
+      "image": {
+        "localFile": "public/img/products/shopska-salati.jpg",
+        "sourceName": "Shopska Salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/bqx8mc1782684286.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53491"
+      }
+    },
+    {
+      "key": "anorli-salat",
+      "productCollection": "SALAD",
+      "productName": "Anorli Salat",
+      "productPrice": 9,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Anor donalari, ko‘katlar va yengil sous qo‘shilgan tetik salat.",
+      "image": {
+        "localFile": "public/img/products/anorli-salat.jpg",
+        "sourceName": "Pomegranate salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/fqpqml1764359125.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53297"
+      }
+    },
+    {
+      "key": "batat-salati",
+      "productCollection": "SALAD",
+      "productName": "Batat Salati",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Pishirilgan shirin kartoshka va ko‘katlardan tayyorlangan salat.",
+      "image": {
+        "localFile": "public/img/products/batat-salati.jpg",
+        "sourceName": "Sweet potato salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/z458v91763817681.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53275"
+      }
+    },
+    {
+      "key": "losos-avokado-salati",
+      "productCollection": "SALAD",
+      "productName": "Losos va Avokado Salati",
+      "productPrice": 15,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Losos, avokado va yangi ko‘katlardan tayyorlangan to‘yimli salat.",
+      "image": {
+        "localFile": "public/img/products/losos-avokado-salati.jpg",
+        "sourceName": "Salmon Avocado Salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/1549542994.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52960"
+      }
+    },
+    {
+      "key": "kartoshka-salati",
+      "productCollection": "SALAD",
+      "productName": "Kartoshka Salati",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Qaynatilgan kartoshka va ko‘katlar bilan tayyorlangan klassik salat.",
+      "image": {
+        "localFile": "public/img/products/kartoshka-salati.jpg",
+        "sourceName": "Classic Potato Salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/5q88l31784664151.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53555"
+      }
+    },
+    {
+      "key": "krevetkali-salat",
+      "productCollection": "SALAD",
+      "productName": "Krevetkali Salat",
+      "productPrice": 13,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Krevetka, yangi sabzavotlar va xushbo‘y ziravorli sous bilan salat.",
+      "image": {
+        "localFile": "public/img/products/krevetkali-salat.jpg",
+        "sourceName": "Bang bang prawn salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/4xcfai1763765676.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53239"
+      }
+    },
+    {
+      "key": "yashil-salat",
+      "productCollection": "SALAD",
+      "productName": "Yashil Salat",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Yangi yashil barglar, bodring va mavsumiy sabzavotlardan yengil salat.",
+      "image": {
+        "localFile": "public/img/products/yashil-salat.jpg",
+        "sourceName": "Bulgarian Green Salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/6awyvm1782685205.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53492"
+      }
+    },
+    {
+      "key": "kunjutli-bodring",
+      "productCollection": "SALAD",
+      "productName": "Kunjutli Bodring Salati",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Bodring, kunjut va yengil sharqona sousli qarsildoq salat.",
+      "image": {
+        "localFile": "public/img/products/kunjutli-bodring.jpg",
+        "sourceName": "Sesame Cucumber Salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/93iok31766436070.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53378"
+      }
+    },
+    {
+      "key": "guruch-ugrali-salat",
+      "productCollection": "SALAD",
+      "productName": "Guruch Ugrali Salat",
+      "productPrice": 10,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Guruch ugrasi, ko‘katlar va yangi sabzavotlardan taycha salat.",
+      "image": {
+        "localFile": "public/img/products/guruch-ugrali-salat.jpg",
+        "sourceName": "Thai rice noodle salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/6g3rso1763486069.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53203"
+      }
+    },
+    {
+      "key": "bodring-arpabodiyon",
+      "productCollection": "SALAD",
+      "productName": "Bodring va Arpabodiyon Salati",
+      "productPrice": 7,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Bodring va arpabodiyondan tayyorlangan xushbo‘y, yengil salat.",
+      "image": {
+        "localFile": "public/img/products/bodring-arpabodiyon.jpg",
+        "sourceName": "Cucumber & fennel salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/ei21r61764365935.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53309"
+      }
+    },
+    {
+      "key": "tovuqli-salat",
+      "productCollection": "SALAD",
+      "productName": "Tovuqli Salat",
+      "productPrice": 11,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Tovuq go‘shti, qarsildoq sabzavotlar va ko‘katlardan salat.",
+      "image": {
+        "localFile": "public/img/products/tovuqli-salat.jpg",
+        "sourceName": "Vietnamese chicken salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/pk8wtn1763758591.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53232"
+      }
+    },
+    {
+      "key": "baqlajon-kuskus",
+      "productCollection": "SALAD",
+      "productName": "Baqlajon va Kuskus Salati",
+      "productPrice": 10,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Pishirilgan baqlajon, kuskus va ko‘katlardan to‘yimli salat.",
+      "image": {
+        "localFile": "public/img/products/baqlajon-kuskus.jpg",
+        "sourceName": "Aubergine couscous salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/02s6gc1763799560.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53267"
+      }
+    },
+    {
+      "key": "pasta-salati",
+      "productCollection": "SALAD",
+      "productName": "O‘rtayer Dengizi Pasta Salati",
+      "productPrice": 9,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Makaron, yangi sabzavot va ko‘katlardan tayyorlangan salat.",
+      "image": {
+        "localFile": "public/img/products/pasta-salati.jpg",
+        "sourceName": "Mediterranean Pasta Salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52777"
+      }
+    },
+    {
+      "key": "grekcha-tovuq-salati",
+      "productCollection": "SALAD",
+      "productName": "Grekcha Tovuq Salati",
+      "productPrice": 12,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Tovuq, kinoa va yangi sabzavotlardan tayyorlangan grekcha salat.",
+      "image": {
+        "localFile": "public/img/products/grekcha-tovuq-salati.jpg",
+        "sourceName": "Chicken Quinoa Greek Salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53011"
+      }
+    },
+    {
+      "key": "sarsabil-salati",
+      "productCollection": "SALAD",
+      "productName": "Sarsabil Salati",
+      "productPrice": 10,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Pechda pishirilgan sarsabil va ko‘katlar bilan iliq salat.",
+      "image": {
+        "localFile": "public/img/products/sarsabil-salati.jpg",
+        "sourceName": "Warm roast asparagus salad",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/ktsws11761998344.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53106"
+      }
+    },
+    {
+      "key": "paxlava",
+      "productCollection": "DESSERT",
+      "productName": "Paxlava",
+      "productPrice": 7,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Qarsildoq qatlamli xamir, yong‘oq va shirin sirop bilan turkcha paxlava.",
+      "image": {
+        "localFile": "public/img/products/paxlava.jpg",
+        "sourceName": "Baklava with spiced nuts, ricotta & chocolate",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/ytme8t1764111401.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53279"
+      }
+    },
+    {
+      "key": "kunafa",
+      "productCollection": "DESSERT",
+      "productName": "Kunafa",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Qizartirilgan ingichka xamir va shirin siropli sharqona desert.",
+      "image": {
+        "localFile": "public/img/products/kunafa.jpg",
+        "sourceName": "Knafeh",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/76nffj1763593933.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53216"
+      }
+    },
+    {
+      "key": "asalli-cheesecake",
+      "productCollection": "DESSERT",
+      "productName": "Asalli Cheesecake",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Asal va yogurt bilan tayyorlangan mayin cheesecake bo‘lagi.",
+      "image": {
+        "localFile": "public/img/products/asalli-cheesecake.jpg",
+        "sourceName": "Honey Yogurt Cheesecake",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/y2irzl1585563479.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53007"
+      }
+    },
+    {
+      "key": "shokoladli-tort",
+      "productCollection": "DESSERT",
+      "productName": "Shokoladli Tort",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Quyuq shokoladli krem va yumshoq biskvitdan tayyorlangan tort.",
+      "image": {
+        "localFile": "public/img/products/shokoladli-tort.jpg",
+        "sourceName": "Chocolate Gateau",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52776"
+      }
+    },
+    {
+      "key": "malinali-brauni",
+      "productCollection": "DESSERT",
+      "productName": "Malinali Brauni",
+      "productPrice": 7,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Shokolad va malina bilan tayyorlangan yumshoq brauni.",
+      "image": {
+        "localFile": "public/img/products/malinali-brauni.jpg",
+        "sourceName": "Chocolate Raspberry Brownies",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52860"
+      }
+    },
+    {
+      "key": "pistali-tort",
+      "productCollection": "DESSERT",
+      "productName": "Pistali Tort",
+      "productPrice": 9,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Pista ta’mi va mayin kremli biskvit torti.",
+      "image": {
+        "localFile": "public/img/products/pistali-tort.jpg",
+        "sourceName": "Pistachio cake",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/xvgpng1764121726.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53293"
+      }
+    },
+    {
+      "key": "sabzili-tort",
+      "productCollection": "DESSERT",
+      "productName": "Sabzili Tort",
+      "productPrice": 7,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Sabzi, yong‘oq va mayin krem bilan tayyorlangan tort bo‘lagi.",
+      "image": {
+        "localFile": "public/img/products/sabzili-tort.jpg",
+        "sourceName": "Carrot Cake",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/vrspxv1511722107.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52897"
+      }
+    },
+    {
+      "key": "xurmoli-keks",
+      "productCollection": "DESSERT",
+      "productName": "Xurmoli Yong‘oq Keksi",
+      "productPrice": 7,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Xurmo, yong‘oq va asal bilan pishirilgan xushbo‘y keks.",
+      "image": {
+        "localFile": "public/img/products/xurmoli-keks.jpg",
+        "sourceName": "Walnut, date & honey cake",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/towo9c1763814590.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53271"
+      }
+    },
+    {
+      "key": "pankeyk",
+      "productCollection": "DESSERT",
+      "productName": "Pankeyk",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Yumshoq va yengil pankeyklar, shirin sous bilan.",
+      "image": {
+        "localFile": "public/img/products/pankeyk.jpg",
+        "sourceName": "Pancakes",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52854"
+      }
+    },
+    {
+      "key": "kofeli-muzqaymoq",
+      "productCollection": "DESSERT",
+      "productName": "Kofeli Muzqaymoq",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Espresso ta’mli mayin va salqin muzqaymoq.",
+      "image": {
+        "localFile": "public/img/products/kofeli-muzqaymoq.jpg",
+        "sourceName": "CAFE LA LLAVE ESPRESSO ICE CREAM",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/9kecho1784575366.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53544"
+      }
+    },
+    {
+      "key": "qulupnayli-tart",
+      "productCollection": "DESSERT",
+      "productName": "Qulupnayli Tart",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Qarsildoq xamir, mayin krem va yangi qulupnayli tart.",
+      "image": {
+        "localFile": "public/img/products/qulupnayli-tart.jpg",
+        "sourceName": "Strawberry tart",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/9kmyly1784660555.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53550"
+      }
+    },
+    {
+      "key": "olmali-pirog",
+      "productCollection": "DESSERT",
+      "productName": "Olmali Pirog",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Shirin olma va xushbo‘y dolchin bilan pishirilgan pirog bo‘lagi.",
+      "image": {
+        "localFile": "public/img/products/olmali-pirog.jpg",
+        "sourceName": "Apple Pie",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/stnxzp1784835840.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53575"
+      }
+    },
+    {
+      "key": "karamelli-cheesecake",
+      "productCollection": "DESSERT",
+      "productName": "Karamelli Cheesecake",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Tuzli karamel sousi bilan bezatilgan mayin cheesecake.",
+      "image": {
+        "localFile": "public/img/products/karamelli-cheesecake.jpg",
+        "sourceName": "Salted Caramel Cheescake",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/xqrwyr1511133646.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52833"
+      }
+    },
+    {
+      "key": "churros",
+      "productCollection": "DESSERT",
+      "productName": "Churros",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Usti qarsildoq, ichi yumshoq shakarli churros tayoqchalari.",
+      "image": {
+        "localFile": "public/img/products/churros.jpg",
+        "sourceName": "Churros",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/nxnny61763250596.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53153"
+      }
+    },
+    {
+      "key": "malinali-muss",
+      "productCollection": "DESSERT",
+      "productName": "Malinali Muss",
+      "productPrice": 7,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Yengil, havodor va xushbo‘y malinadan tayyorlangan muss.",
+      "image": {
+        "localFile": "public/img/products/malinali-muss.jpg",
+        "sourceName": "Raspberry mousse",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/v5jrnn1764362830.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53303"
+      }
+    },
+    {
+      "key": "bananli-pankeyk",
+      "productCollection": "DESSERT",
+      "productName": "Bananli Pankeyk",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Banan qo‘shilgan yumshoq pankeyklar, nonushta yoki desert uchun.",
+      "image": {
+        "localFile": "public/img/products/bananli-pankeyk.jpg",
+        "sourceName": "Banana Pancakes",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52855"
+      }
+    },
+    {
+      "key": "olma-rezavor-smuzi",
+      "productCollection": "DRINK",
+      "productName": "Olma va Rezavor Smuzi",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Olma va rezavor mevalardan tayyorlangan salqin smuzi.",
+      "image": {
+        "localFile": "public/img/products/olma-rezavor-smuzi.jpg",
+        "sourceName": "Apple Berry Smoothie",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/xwqvur1468876473.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12710"
+      }
+    },
+    {
+      "key": "bananli-milkshake",
+      "productCollection": "DRINK",
+      "productName": "Bananli Milkshake",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Banan va sutdan tayyorlangan mayin milkshake.",
+      "image": {
+        "localFile": "public/img/products/bananli-milkshake.jpg",
+        "sourceName": "Banana Milk Shake",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/rtwwsx1472720307.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12654"
+      }
+    },
+    {
+      "key": "qulupnay-banan-shake",
+      "productCollection": "DRINK",
+      "productName": "Qulupnay va Banan Shake",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Qulupnay, banan va sutdan tayyorlangan mevali shake.",
+      "image": {
+        "localFile": "public/img/products/qulupnay-banan-shake.jpg",
+        "sourceName": "Banana Strawberry Shake",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/vqquwx1472720634.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12656"
+      }
+    },
+    {
+      "key": "mango-lassi",
+      "productCollection": "DRINK",
+      "productName": "Mango Lassi",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Mango va yogurt bilan tayyorlangan salqin ichimlik.",
+      "image": {
+        "localFile": "public/img/products/mango-lassi.jpg",
+        "sourceName": "Lassi - Mango",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/1bw6sd1487603816.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12698"
+      }
+    },
+    {
+      "key": "laymli-limonad",
+      "productCollection": "DRINK",
+      "productName": "Laymli Limonad",
+      "productPrice": 4,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Laym sharbati bilan tayyorlangan tetiklashtiruvchi limonad.",
+      "image": {
+        "localFile": "public/img/products/laymli-limonad.jpg",
+        "sourceName": "Limeade",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/5jdp5r1487603680.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12704"
+      }
+    },
+    {
+      "key": "apelsinli-ichimlik",
+      "productCollection": "DRINK",
+      "productName": "Apelsinli Ichimlik",
+      "productPrice": 4,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Apelsin ta’mli salqin va tetiklashtiruvchi ichimlik.",
+      "image": {
+        "localFile": "public/img/products/apelsinli-ichimlik.jpg",
+        "sourceName": "Orangeade",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/ytsxxw1441167732.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12618"
+      }
+    },
+    {
+      "key": "qulupnayli-limonad",
+      "productCollection": "DRINK",
+      "productName": "Qulupnayli Limonad",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Qulupnay va limondan tayyorlangan yozgi limonad.",
+      "image": {
+        "localFile": "public/img/products/qulupnayli-limonad.jpg",
+        "sourceName": "Strawberry Lemonade",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/spvvxp1468924425.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/13036"
+      }
+    },
+    {
+      "key": "muzli-kofe",
+      "productCollection": "DRINK",
+      "productName": "Muzli Kofe",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Muz bilan tortiladigan salqin va xushbo‘y kofe.",
+      "image": {
+        "localFile": "public/img/products/muzli-kofe.jpg",
+        "sourceName": "Iced Coffee",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/ytprxy1454513855.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12770"
+      }
+    },
+    {
+      "key": "frappe",
+      "productCollection": "DRINK",
+      "productName": "Frappe",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Ko‘pirtirilgan, salqin va mayin kofeli ichimlik.",
+      "image": {
+        "localFile": "public/img/products/frappe.jpg",
+        "sourceName": "Frappé",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/vqwryq1441245927.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12768"
+      }
+    },
+    {
+      "key": "masala-choy",
+      "productCollection": "DRINK",
+      "productName": "Masala Choy",
+      "productPrice": 4,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Sut va sharqona ziravorlar bilan damlangan issiq choy.",
+      "image": {
+        "localFile": "public/img/products/masala-choy.jpg",
+        "sourceName": "Masala Chai",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/uyrpww1441246384.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12774"
+      }
+    },
+    {
+      "key": "issiq-shokolad",
+      "productCollection": "DRINK",
+      "productName": "Issiq Shokolad",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Quyuq kakao va sutdan tayyorlangan issiq shokolad.",
+      "image": {
+        "localFile": "public/img/products/issiq-shokolad.jpg",
+        "sourceName": "Castillian Hot Chocolate",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/3nbu4a1487603196.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12730"
+      }
+    },
+    {
+      "key": "taycha-muzli-choy",
+      "productCollection": "DRINK",
+      "productName": "Taycha Muzli Choy",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Sutli, xushbo‘y va muz bilan tortiladigan taycha choy.",
+      "image": {
+        "localFile": "public/img/products/taycha-muzli-choy.jpg",
+        "sourceName": "Thai Iced Tea",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/trvwpu1441245568.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12786"
+      }
+    },
+    {
+      "key": "mango-apelsin-smuzi",
+      "productCollection": "DRINK",
+      "productName": "Mango va Apelsin Smuzi",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Mango va apelsindan tayyorlangan mevali smuzi.",
+      "image": {
+        "localFile": "public/img/products/mango-apelsin-smuzi.jpg",
+        "sourceName": "Mango Orange Smoothie",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/vdp2do1487603520.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12716"
+      }
+    },
+    {
+      "key": "ananas-zanjabil-smuzi",
+      "productCollection": "DRINK",
+      "productName": "Ananas va Zanjabil Smuzi",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Ananas va zanjabil ta’mli tetik smuzi.",
+      "image": {
+        "localFile": "public/img/products/ananas-zanjabil-smuzi.jpg",
+        "sourceName": "Pineapple Gingerale Smoothie",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/eg9i1d1487603469.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12718"
+      }
+    },
+    {
+      "key": "yogurtli-ichimlik",
+      "productCollection": "DRINK",
+      "productName": "Yogurtli Ichimlik",
+      "productPrice": 4,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 0.5,
+      "productDesc": "Yogurt asosida tayyorlangan salqin va yengil ichimlik.",
+      "image": {
+        "localFile": "public/img/products/yogurtli-ichimlik.jpg",
+        "sourceName": "Yoghurt Cooler",
+        "sourceUrl": "https://www.thecocktaildb.com/images/media/drink/trttrv1441254466.jpg",
+        "sourcePage": "https://www.thecocktaildb.com/drink/12728"
+      }
+    },
+    {
+      "key": "doner-sendvich",
+      "productCollection": "OTHER",
+      "productName": "Doner Sendvich",
+      "productPrice": 9,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Yumshoq non ichida go‘sht, yangi sabzavotlar va sousli doner.",
+      "image": {
+        "localFile": "public/img/lavash.webp",
+        "sourceName": "Existing Burak project image"
+      }
+    },
+    {
+      "key": "sabzavotli-ezma",
+      "productCollection": "OTHER",
+      "productName": "Sabzavotli Ezma",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "SMALL",
+      "productVolume": 1,
+      "productDesc": "Sabzavotlar va ko‘katlardan tayyorlangan ezma, non bilan.",
+      "image": {
+        "localFile": "public/img/fresh.webp",
+        "sourceName": "Existing Burak project image"
+      }
+    },
+    {
+      "key": "hummus",
+      "productCollection": "OTHER",
+      "productName": "Hummus",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "No‘xat, tahini va limon bilan tayyorlangan mayin sharqona gazak.",
+      "image": {
+        "localFile": "public/img/products/hummus.jpg",
+        "sourceName": "Hummus",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/gpon5u1763801180.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53269"
+      }
+    },
+    {
+      "key": "baba-ganush",
+      "productCollection": "OTHER",
+      "productName": "Baba Ganush",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Pishirilgan baqlajon va tahinidan tayyorlangan xushbo‘y gazak.",
+      "image": {
+        "localFile": "public/img/products/baba-ganush.jpg",
+        "sourceName": "Baba Ghanoush",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/dlmh401760524897.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53094"
+      }
+    },
+    {
+      "key": "cacik",
+      "productCollection": "OTHER",
+      "productName": "Cacik",
+      "productPrice": 4,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Yogurt, bodring va ko‘katlardan tayyorlangan salqin turkcha gazak.",
+      "image": {
+        "localFile": "public/img/products/cacik.jpg",
+        "sourceName": "Cacik",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/16zbeu1763789342.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53256"
+      }
+    },
+    {
+      "key": "gril-non",
+      "productCollection": "OTHER",
+      "productName": "Gril Non",
+      "productPrice": 3,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Grilda qizartirilgan yangi yassi non.",
+      "image": {
+        "localFile": "public/img/products/gril-non.jpg",
+        "sourceName": "Griddled flatbreads",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/8825lo1763815264.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53272"
+      }
+    },
+    {
+      "key": "tandir-non",
+      "productCollection": "OTHER",
+      "productName": "Tandir Non",
+      "productPrice": 3,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Tandirda pishirilgan usti qarsildoq, ichi yumshoq non.",
+      "image": {
+        "localFile": "public/img/products/tandir-non.jpg",
+        "sourceName": "Tendir Choreyi (Tandoori Bread)",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/5mfmh01780158856.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53448"
+      }
+    },
+    {
+      "key": "kartoshkali-bolani",
+      "productCollection": "OTHER",
+      "productName": "Kartoshkali Bolani",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Kartoshkali ichlik solingan qizartirilgan yupqa non.",
+      "image": {
+        "localFile": "public/img/products/kartoshkali-bolani.jpg",
+        "sourceName": "Bolani with Potato Filling",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/de0sns1779555283.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53401"
+      }
+    },
+    {
+      "key": "pishloqli-borek",
+      "productCollection": "OTHER",
+      "productName": "Pishloqli Borek",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Qatlamli xamir ichida pishloqli ichlik bilan pishirilgan borek.",
+      "image": {
+        "localFile": "public/img/products/pishloqli-borek.jpg",
+        "sourceName": "Cheese Borek",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/oal8x31764119345.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53290"
+      }
+    },
+    {
+      "key": "pishloqli-tayoqchalar",
+      "productCollection": "OTHER",
+      "productName": "Pishloqli Tayoqchalar",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Usti qarsildoq va ichi yumshoq pishloqli tayoqchalar.",
+      "image": {
+        "localFile": "public/img/products/pishloqli-tayoqchalar.jpg",
+        "sourceName": "Cheese Sticks",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/7i6csk1780094394.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53442"
+      }
+    },
+    {
+      "key": "makkajoxori",
+      "productCollection": "OTHER",
+      "productName": "Makkajo‘xori",
+      "productPrice": 4,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Laym va xushbo‘y sariyog‘ bilan tortiladigan makkajo‘xori.",
+      "image": {
+        "localFile": "public/img/products/makkajoxori.jpg",
+        "sourceName": "Corn on the cob with lime, green chilli and coconut butter",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/brhaoj1780086661.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53431"
+      }
+    },
+    {
+      "key": "kumpir",
+      "productCollection": "OTHER",
+      "productName": "Kumpir",
+      "productPrice": 8,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Pechda pishirilgan katta kartoshka, turli qo‘shimchalar bilan.",
+      "image": {
+        "localFile": "public/img/products/kumpir.jpg",
+        "sourceName": "Kumpir",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/52978"
+      }
+    },
+    {
+      "key": "shaurma-noni",
+      "productCollection": "OTHER",
+      "productName": "Shaurma Noni",
+      "productPrice": 3,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Shaurma va turli gazaklar uchun yumshoq yupqa non.",
+      "image": {
+        "localFile": "public/img/products/shaurma-noni.jpg",
+        "sourceName": "Shawarma bread",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/i8l2fu1763742525.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53226"
+      }
+    },
+    {
+      "key": "dolma",
+      "productCollection": "OTHER",
+      "productName": "Dolma",
+      "productPrice": 7,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Uzum bargiga o‘ralgan mazali ichlikli sharqona dolma.",
+      "image": {
+        "localFile": "public/img/products/dolma.jpg",
+        "sourceName": "Dolma Japrak Stuffed Vine Leaves",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/lqshrh1779648160.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53411"
+      }
+    },
+    {
+      "key": "yuka-fri",
+      "productCollection": "OTHER",
+      "productName": "Yuka Fri",
+      "productPrice": 5,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "Pechda qizartirilgan yuka bo‘laklari, sous bilan.",
+      "image": {
+        "localFile": "public/img/products/yuka-fri.jpg",
+        "sourceName": "Baked Yuca Fries",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/j223gc1784579841.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53548"
+      }
+    },
+    {
+      "key": "falafel",
+      "productCollection": "OTHER",
+      "productName": "Falafel",
+      "productPrice": 6,
+      "productLeftCount": 40,
+      "productSize": "NORMAL",
+      "productVolume": 1,
+      "productDesc": "No‘xat va ko‘katlardan tayyorlangan qarsildoq falafel.",
+      "image": {
+        "localFile": "public/img/products/falafel.jpg",
+        "sourceName": "Falafel",
+        "sourceUrl": "https://www.themealdb.com/images/media/meals/u5e9qq1763795441.jpg",
+        "sourcePage": "https://www.themealdb.com/meal/53266"
+      }
+    }
+  ]
+}

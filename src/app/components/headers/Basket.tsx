@@ -4,7 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
 import Menu from '@mui/material/Menu';
 import CancelIcon from '@mui/icons-material/Cancel';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useHistory } from 'react-router-dom';
 import { CartItem } from '../../../lib/types/search';
@@ -96,13 +96,16 @@ export default function Basket(props: BasketProps) {
             {cartItems.length === 0 ? (
               <div>Cart is empty!</div>
             ) : (
-              <Stack flexDirection={'row'}>
+              <Stack className={'basket-header'}>
                 <div>Cart Products!</div>
-                <DeleteForeverIcon
-                  sx={{ ml: '5px', cursor: 'pointer' }}
-                  color={'primary'}
-                  onClick={() => onDeleteAll()}
-                />
+                <IconButton
+                  className={'clear-basket-button'}
+                  aria-label="Clear cart"
+                  title="Clear cart"
+                  onClick={onDeleteAll}
+                >
+                  <DeleteOutlineIcon fontSize="small" />
+                </IconButton>
               </Stack>
             )}
           </Box>

@@ -17,6 +17,12 @@ const productsPageSlice = createSlice({
 
     setChosenProduct: (state, action) => {
       state.choosenProduct = action.payload;
+      if (action.payload) {
+        const index = state.products.findIndex(
+          (product) => product._id === action.payload._id
+        );
+        if (index !== -1) state.products[index] = action.payload;
+      }
     },
 
     setProducts: (state, action) => {

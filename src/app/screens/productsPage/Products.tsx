@@ -9,7 +9,7 @@ import PaginationItem from '@mui/material/PaginationItem';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useDispatch, useSelector } from 'react-redux';
-import { createSelector, Dispatch } from '@reduxjs/toolkit';
+import { createSelector } from '@reduxjs/toolkit';
 import { setProducts } from './slice';
 import { Product, ProductInquiry } from '../../../lib/types/product';
 import { retreiveProducts } from './selector';
@@ -20,70 +20,58 @@ import { useHistory } from 'react-router-dom';
 import { CartItem } from '../../../lib/types/search';
 
 /** REDUX SLICE & SELECTOR **/
-const actionDispatch = (dispatch: Dispatch) => ({
-  setProducts: (data: Product[]) => dispatch(setProducts(data)),
-});
-
 const productsRetreiver = createSelector(retreiveProducts, (products) => ({
   products,
 }));
 
 interface ProductsProps {
   onAdd: (item: CartItem) => void;
+  productSearch: ProductInquiry;
+  setProductSearch: React.Dispatch<React.SetStateAction<ProductInquiry>>;
 }
 
 export default function Products(props: ProductsProps) {
-  const { onAdd } = props;
-  const { setProducts } = actionDispatch(useDispatch());
+  const { onAdd, productSearch, setProductSearch } = props;
+  const dispatch = useDispatch();
   const { products } = useSelector(productsRetreiver);
-  const [productSearch, setProductSearch] = useState<ProductInquiry>({
-    page: 1,
-    limit: 8,
-    order: 'createdAt',
-    productCollection: ProductCollection.DISH,
-    search: '',
-  });
 
-  const [searchText, setSearchText] = useState<string>('');
+  const [searchText, setSearchText] = useState<string>(productSearch.search ?? '');
   const history = useHistory();
 
   useEffect(() => {
+    let active = true;
     const product = new ProductService();
     product
       .getProducts(productSearch)
-      .then((data) => setProducts(data))
+      .then((data) => {
+        if (active) dispatch(setProducts(data));
+      })
       .catch((err) => console.log(err));
-  }, [productSearch]);
-
-  useEffect(() => {
-    if (searchText === '') {
-      productSearch.search = '';
-      setProductSearch({ ...productSearch });
-    }
-  }, [searchText]);
+    return () => {
+      active = false;
+    };
+  }, [productSearch, dispatch]);
 
   /** HANDLERS **/
 
   const searchColletionHandler = (collection: ProductCollection) => {
-    productSearch.page = 1;
-    productSearch.productCollection = collection;
-    setProductSearch({ ...productSearch });
+    setProductSearch((previous) => ({
+      ...previous,
+      page: 1,
+      productCollection: collection,
+    }));
   };
 
   const searchOrderHanler = (order: string) => {
-    productSearch.page = 1;
-    productSearch.order = order;
-    setProductSearch({ ...productSearch });
+    setProductSearch((previous) => ({ ...previous, page: 1, order }));
   };
 
   const searchProductHandler = () => {
-    productSearch.search = searchText;
-    setProductSearch({ ...productSearch });
+    setProductSearch((previous) => ({ ...previous, page: 1, search: searchText }));
   };
 
   const paginationHandler = (e: ChangeEvent<any>, value: number) => {
-    productSearch.page = value;
-    setProductSearch({ ...productSearch });
+    setProductSearch((previous) => ({ ...previous, page: value }));
   };
 
   const chooseDishHandler = (id: string) => {
@@ -104,7 +92,17 @@ export default function Products(props: ProductsProps) {
                   name={'singleResearch'}
                   placeholder={'Type here'}
                   value={searchText}
-                  onChange={(e) => setSearchText(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    setSearchText(value);
+                    if (value === '') {
+                      setProductSearch((previous) =>
+                        previous.search
+                          ? { ...previous, page: 1, search: '' }
+                          : previous
+                      );
+                    }
+                  }}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') searchProductHandler();
                   }}
@@ -285,7 +283,7 @@ export default function Products(props: ProductsProps) {
                         <span className={'product-title'}>
                           {product.productName}
                         </span>
-                        <div className={'product-desc'}>
+                        <div className={'product-price'}>
                           <MonetizationOnIcon />
                           {product.productPrice}
                         </div>
