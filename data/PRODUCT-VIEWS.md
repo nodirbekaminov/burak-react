@@ -12,15 +12,13 @@ Product detail renders matching cached card data immediately and refreshes it
 in the background. It never renders another product's cached image. Opening a
 direct URL without cached data uses static placeholders, without a spinner.
 
-Validation from the React repository (requires the local backend, its database
-configuration and dependencies, and the Postman CLI):
+Frontend validation from the React repository:
 
 ```sh
 CI=true npm test -- --watchAll=false --runInBand src/app/screens/productsPage/ChosenProduct.test.tsx
-node scripts/verify-unique-product-views.cjs
 ```
 
-The HTTP regression script uses temporary products and accounts, verifies
-first/repeat/concurrent views, another account, another product, guests, and
-historical view records, then removes only its own fixtures. Postman event
-reporting is disabled, and temporary credentials are never committed or printed.
+Before its removal, the HTTP regression script verified first/repeat/concurrent
+views, another account, another product, guests, and historical view records.
+Its temporary products, accounts, views, and credentials were removed after the
+check. Postman event reporting was disabled.
