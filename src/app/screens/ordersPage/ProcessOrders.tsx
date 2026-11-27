@@ -8,16 +8,45 @@ import { useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import { retrieveProcessOrders } from './selector';
 import { Product } from '../../../lib/types/product';
-import { serverApi } from '../../../lib/config';
-import { Order, OrderItem } from '../../../lib/types/order';
+import { Messages, serverApi } from '../../../lib/config';
+import { Order, OrderItem, OrderUpdateInput } from '../../../lib/types/order';
+import { OrderStatus } from '../../../lib/enums/order.enum';
+import { sweetErrorHandling } from '../../../lib/sweetAlert';
+import { useGlobals } from '../../hooks/useGlobals';
+import OrderService from '../../services/OrderService';
 
 const processOrdersRetreiver = createSelector(
   retrieveProcessOrders,
   (processOrders) => ({ processOrders })
 );
 
-export default function ProcessOrders() {
+interface ProcessOrdersProps {
+  setValue: (value: string) => void;
+}
+
+export default function ProcessOrders({ setValue }: ProcessOrdersProps) {
   const { processOrders } = useSelector(processOrdersRetreiver);
+  const { authMember, setOrderBuilder } = useGlobals();
+
+  /** HANDLERS **/
+  const finishOrderHandler = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    try {
+      if (!authMember) throw new Error(Messages.error2);
+      const input: OrderUpdateInput = {
+        orderId: e.currentTarget.value,
+        orderStatus: OrderStatus.FINISH,
+      };
+      if (!window.confirm('Do you want to fulfil the order?')) return;
+
+      await new OrderService().updateOrder(input);
+      setValue('3');
+      setOrderBuilder(new Date());
+    } catch (err) {
+      console.log(err);
+      sweetErrorHandling(err).then();
+    }
+  };
+
   return (
     <TabPanel value={'2'}>
       <Stack>
@@ -74,6 +103,8 @@ export default function ProcessOrders() {
                 <Button
                   variant="contained"
                   className={'verify-button'}
+                  value={order._id}
+                  onClick={finishOrderHandler}
                 >
                   Verify to Fulfil
                 </Button>
