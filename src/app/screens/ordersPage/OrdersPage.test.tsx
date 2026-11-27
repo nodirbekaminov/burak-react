@@ -4,10 +4,12 @@ import { createRoot, Root } from 'react-dom/client';
 import { fireEvent, getByRole } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import { Router } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
+import TabContext from '@mui/lab/TabContext';
 import { createMemoryHistory } from 'history';
 import OrdersPage from './index';
-import ordersPageReducer from './slice';
+import ordersPageReducer, { setPausedOrders } from './slice';
+import PausedOrders from './PausedOrders';
 import OrderService from '../../services/OrderService';
 import { GlobalContext } from '../../hooks/useGlobals';
 import { Order } from '../../../lib/types/order';
@@ -126,22 +128,32 @@ afterEach(() => {
   delete (globalThis as any).IS_REACT_ACT_ENVIRONMENT;
 });
 
-async function mount(authMember: Member | null = member) {
+async function mount(authMember: Member | null = member, pausedOnly = false) {
   const store = configureStore({
     reducer: { ordersPage: ordersPageReducer },
     middleware: (defaults) => defaults({ serializableCheck: false }),
   });
+  if (pausedOnly) store.dispatch(setPausedOrders(orders));
+  const history = createMemoryHistory({ initialEntries: ['/orders'] });
   await act(async () => {
     root.render(
       <Provider store={store}>
-        <Router history={createMemoryHistory({ initialEntries: ['/orders'] })}>
+        <Router history={history}>
           <TestGlobals authMember={authMember}>
-            <OrdersPage />
+            <Switch>
+              <Route path="/orders">
+                {pausedOnly ? (
+                  <TabContext value="1"><PausedOrders setValue={jest.fn()} /></TabContext>
+                ) : <OrdersPage />}
+              </Route>
+              <Route path="/"><div>Home page</div></Route>
+            </Switch>
           </TestGlobals>
         </Router>
       </Provider>
     );
   });
+  return history;
 }
 
 async function click(selector: string) {
@@ -222,7 +234,7 @@ test('failed payment shows the error and keeps the current tab and order', async
 });
 
 test('unauthenticated payment is rejected before confirmation or mutation', async () => {
-  await mount(null);
+  await mount(null, true);
   await click('.pay-button');
 
   expect(window.confirm).not.toHaveBeenCalled();
@@ -230,4 +242,17 @@ test('unauthenticated payment is rejected before confirmation or mutation', asyn
   expect(sweetErrorHandling).toHaveBeenCalledWith(
     expect.objectContaining({ message: 'Please login first!' })
   );
+});
+
+test('redirects unauthenticated order-page visits before loading orders', async () => {
+  const history = await mount(null);
+  expect(history.location.pathname).toBe('/');
+  expect(getMyOrders).not.toHaveBeenCalled();
+  expect(container.querySelector('.order-page')).toBeNull();
+});
+
+test('uses the restaurant badge for restaurant members', async () => {
+  await mount({ ...member, memberType: MemberType.RESTAURANT });
+  expect(container.querySelector('.order-user-icon-box img'))
+    .toHaveAttribute('src', '/icons/restaurant.svg');
 });
