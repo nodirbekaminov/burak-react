@@ -1,55 +1,80 @@
-import React from "react";
-import { Box, Stack } from "@mui/material";
-import Button from "@mui/material/Button";
-import TabPanel from "@mui/lab/TabPanel";
-import moment from "moment";
+import React from 'react';
+import moment from 'moment';
+import { Box, Stack } from '@mui/material';
+import Button from '@mui/material/Button';
+import TabPanel from '@mui/lab/TabPanel';
+
+import { useSelector } from 'react-redux';
+import { createSelector } from 'reselect';
+import { retrieveProcessOrders } from './selector';
+import { Product } from '../../../lib/types/product';
+import { serverApi } from '../../../lib/config';
+import { Order, OrderItem } from '../../../lib/types/order';
+
+const processOrdersRetreiver = createSelector(
+  retrieveProcessOrders,
+  (processOrders) => ({ processOrders })
+);
 
 export default function ProcessOrders() {
+  const { processOrders } = useSelector(processOrdersRetreiver);
   return (
-    <TabPanel value={"2"}>
+    <TabPanel value={'2'}>
       <Stack>
-        {[1, 2].map((ele, index) => {
+        {processOrders.map((order: Order) => {
           return (
-            <Box key={index} className={"order-main-box"}>
-              <Box className={"order-box-scroll"}>
-                {[1, 2].map((ele2, index2) => {
+            <Box key={order._id} className={'order-main-box'}>
+              <Box className={'order-box-scroll'}>
+                {order?.orderItems?.map((item: OrderItem) => {
+                  const product: Product = order.productData.filter(
+                    (ele: Product) => item.productId === ele._id
+                  )[0];
+                  if (!product) return null;
+                  const imagePath = `${serverApi}/${product.productImages[0]}`;
                   return (
-                    <Box key={index2} className={"orders-name-price"}>
+                    <Box key={item._id} className={'orders-name-price'}>
                       <img
-                        src={"/img/kebab.webp"}
-                        className={"order-dish-img"}
+                        src={imagePath}
+                        alt={product.productName}
+                        className={'order-dish-img'}
                       />
-                      <p className={"title-dish"}>Kebab</p>
-                      <Box className={"price-box"}>
-                        <p>$11</p>
-                        <img src={"/icons/close.svg"} />
-                        <p>2</p>
-                        <img src={"/icons/pause.svg"} />
-                        <p style={{ marginLeft: "15px" }}>$22</p>
+                      <p className={'title-dish'}>{product.productName}</p>
+                      <Box className={'price-box'}>
+                        <p>${item.itemPrice}</p>
+                        <img src={'/icons/close.svg'} alt="" />
+                        <p>{item.itemQuantity}</p>
+                        <img src={'/icons/pause.svg'} alt="" />
+                        <p style={{ marginLeft: '15px' }}>
+                          ${item.itemQuantity * item.itemPrice}
+                        </p>
                       </Box>
                     </Box>
                   );
                 })}
               </Box>
 
-              <Box className={"total-price-box"}>
-                <Box className={"box-total"}>
+              <Box className={'total-price-box'}>
+                <Box className={'box-total'}>
                   <p>Product price</p>
-                  <p>$22</p>
-                  <img src={"/icons/plus.svg"} style={{ marginLeft: "20px" }} />
-                  <p>delivery cost</p>
-                  <p>$2</p>
+                  <p>${order.orderTotal - order.orderDelivery}</p>
+                  <img alt="" src={'/icons/plus.svg'} style={{ marginLeft: '20px' }} />
+                  <p>Delivery cost</p>
+                  <p>${order.orderDelivery}</p>
                   <img
-                    src={"/icons/pause.svg"}
-                    style={{ marginLeft: "20px" }}
+                    src={'/icons/pause.svg'}
+                    alt=""
+                    style={{ marginLeft: '20px' }}
                   />
                   <p>Total</p>
-                  <p>$24</p>
+                  <p>${order.orderTotal}</p>
                 </Box>
-                <p className={"data-compl"}>
-                  {moment().format("YY-MM-DD HH:mm")}
+                <p className={'data-compl'}>
+                  {moment(order.updatedAt).format('YYYY-MM-DD HH:mm')}
                 </p>
-                <Button variant="contained" className={"verify-button"}>
+                <Button
+                  variant="contained"
+                  className={'verify-button'}
+                >
                   Verify to Fulfil
                 </Button>
               </Box>
@@ -57,10 +82,15 @@ export default function ProcessOrders() {
           );
         })}
 
-        {false && (
-          <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
+        {processOrders.length === 0 && (
+          <Box
+            display={'flex'}
+            flexDirection={'row'}
+            justifyContent={'center'}
+          >
             <img
-              src={"/icons/noimage-list.svg"}
+              src={'/icons/noimage-list.svg'}
+              alt="No processing orders"
               style={{ width: 300, height: 300 }}
             />
           </Box>
